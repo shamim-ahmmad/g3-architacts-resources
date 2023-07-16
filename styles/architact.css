@@ -55,18 +55,63 @@ nav li a {
 .banner img {
   width: 100%;
 }
+/* main section  */
+main {
+  width: 1440px;
+  margin: 0 auto;
+}
+/* team fetures section  */
+.teams-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teams-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  width: 50%;
+}
+.teams-image img {
+  margin-top: 85px;
+  width: 100%;
+}
+.teams-content {
+  width: 50%;
+  padding-left: 76px;
+  padding-right: 76px;
+  color: var(--dark-03, #727272);
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+#our-text {
+  color: #131313;
+  font-weight: 700;
+}
+#fetures-text {
+  color: #ff900e;
+}
+.content-description {
+  font-size: 1rem;
+}
+/* teams fetures section end  */
 
 /* responsive for media query */
 /* small device or mobile device */
 @media screen and (max-width: 576px) {
-  .banner {
+  .banner,
+  main {
     width: auto;
   }
   header {
     padding: 20px;
   }
-  nav {
+  nav,
+  .teams-container {
     flex-direction: column;
+  }
+  .teams-image {
+    grid-template-columns: 1fr;
   }
 }
 /* media query for medium device */
