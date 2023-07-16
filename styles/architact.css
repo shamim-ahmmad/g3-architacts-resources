@@ -34,9 +34,50 @@ nav li a {
   text-decoration: none;
   color: #424242;
 }
+.btn-primary {
+  color: #fff;
+  border-radius: 8px;
+  background: #ff900e;
+  padding: 21px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 0;
+  margin-top: 32px;
+  margin-bottom: 50px;
+}
 /* banner part  */
 .banner {
   width: 800px;
   text-align: center;
   margin: 0 auto;
+}
+.banner img {
+  width: 100%;
+}
+
+/* responsive for media query */
+/* small device or mobile device */
+@media screen and (max-width: 576px) {
+  .banner {
+    width: auto;
+  }
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
+/* media query for medium device */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 50px;
+  }
+  .banner {
+    width: auto;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
