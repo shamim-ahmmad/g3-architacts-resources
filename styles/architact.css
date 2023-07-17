@@ -1,9 +1,19 @@
 /* work sens font from google font  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@400;500;600;700;800&display=swap");
-
+/* shared style  */
 * {
   font-family: "Roboto", sans-serif;
   font-family: "Work Sans", sans-serif;
+}
+.section-title {
+  color: #131313;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.text-light-gray {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
 }
 /* header section  */
 header {
@@ -15,11 +25,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.nav-title {
-  color: #131313;
-  font-size: 3rem;
-  font-weight: 700;
-}
+
 nav > ul {
   display: flex;
 }
@@ -55,10 +61,14 @@ nav li a {
 .banner img {
   width: 100%;
 }
-/* main section  */
+/* main section */
+
 main {
   width: 1440px;
-  margin: 0 auto;
+  margin: 70px auto;
+  /* border: 1px solid red; */
+}
+.section-title {
 }
 /* team fetures section  */
 .teams-container {
@@ -91,10 +101,31 @@ main {
 #fetures-text {
   color: #ff900e;
 }
-.content-description {
-  font-size: 1rem;
-}
 /* teams fetures section end  */
+/* some facts section start  */
+.facts-card-container {
+  display: flex;
+  justify-content: space-between;
+}
+.facts-card-container .card {
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  padding: 35px;
+  text-align: center;
+}
+.card-stats {
+  font-size: 2.8rem;
+  color: #424242;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card-title {
+  font-size: 1.2rem;
+  color: #727272;
+  font-weight: 600;
+  margin: 5px;
+}
 
 /* responsive for media query */
 /* small device or mobile device */
@@ -112,6 +143,10 @@ main {
   }
   .teams-image {
     grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .teams-image img {
+    width: 100%;
   }
 }
 /* media query for medium device */
