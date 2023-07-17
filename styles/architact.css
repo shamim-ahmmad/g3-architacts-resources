@@ -127,6 +127,13 @@ main {
 }
 .ten-years-badge h2 {
   font-size: 4rem;
+  margin: 0;
+  font-weight: 700;
+}
+.ten-years-badge p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 /* some facts section start  */
