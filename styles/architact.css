@@ -4,6 +4,7 @@
 * {
   font-family: "Roboto", sans-serif;
   font-family: "Work Sans", sans-serif;
+  margin: 0;
 }
 .section-title {
   color: #131313;
@@ -117,6 +118,10 @@ main {
   border-left: 5px solid #ff900e;
   padding-left: 20px;
 }
+.fetures-img img {
+  height: 90%;
+  margin-left: 90px;
+}
 .ten-years-badge {
   width: 342px;
   border-radius: 8px;
@@ -124,6 +129,8 @@ main {
   padding: 45px;
   color: #fff;
   text-align: center;
+  position: relative;
+  bottom: 100px;
 }
 .ten-years-badge h2 {
   font-size: 4rem;
@@ -140,12 +147,16 @@ main {
 .facts-card-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 100px;
 }
 .facts-card-container .card {
   border: 1px solid #ff900e;
   border-radius: 8px;
   padding: 35px;
   text-align: center;
+}
+.some-fact .section-title {
+  margin-bottom: 24px;
 }
 .card-stats {
   font-size: 2.8rem;
@@ -163,6 +174,7 @@ main {
 /* sponsors section  */
 .sponsors {
   text-align: center;
+  margin-top: 180px;
 }
 .sponsors-img-container {
   display: flex;
@@ -172,7 +184,16 @@ main {
 .sponsors .section-title {
   margin-bottom: 10px;
 }
-
+/* footer section  */
+footer {
+  border-radius: 8px;
+  background: #fff4e7;
+  width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 38px 0px;
+  margin-bottom: 150px;
+}
 /* responsive for media query */
 /* small device or mobile device */
 @media screen and (max-width: 576px) {
